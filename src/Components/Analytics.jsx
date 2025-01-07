@@ -29,7 +29,7 @@ function Analytics() {
     summedRentAmount: summedRentByMonth[selectedMonth],
   }));
 
-  // js api call to get rent collection datab
+  //js api call to get rent collection data
   const rentCollection = async () => {
     try {
       const response = await axios.get(`${BASEURL}/rent/list`);
@@ -132,11 +132,11 @@ function Analytics() {
         </div>
         {/*----cards-----*/}
 
-        <div className="Cards-section mt-5 p-2">
+        <div className="Cards-section mt-2 p-2">
           <div className="container-fluid">
             <div className="row">
-              <div className="col-lg-4 col-md-6">
-                <div class="card p-2" style={{ width: "17rem", height:"7rem" }}>
+              <div className="col-lg-3 col-md-6">
+                <div class="card p-2" >
                   <div class="card-body">
                     <h5 class="card-title text-primary fw-bold">{peopleCount}</h5>
                     <h6 class="mt-2 card-subtitle mb-2 text-body-secondary">
@@ -145,8 +145,8 @@ function Analytics() {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-6">
-                <div class="card p-2" style={{ width: "17rem",height:"7rem" }}>
+              <div className="col-lg-3 col-md-6">
+                <div class="card p-2" >
                   <div class="card-body ">
                     <h5 class="card-title  text-primary fw-bold">{totalRent} </h5>
                     <h6 class="mt-2 card-subtitle mb-2 text-body-secondary">
@@ -155,8 +155,18 @@ function Analytics() {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-6">
-                <div class="card p-2" style={{ width: "17rem",height:"7rem" }}>
+              <div className="col-lg-3 col-md-6">
+                <div class="card p-2" >
+                  <div class="card-body">
+                    <h5 class="card-title text-primary fw-bold">{totalRent} </h5>
+                    <h6 class="mt-2 card-subtitle mb-2 text-body-secondary">
+                      Total Expenses 
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-3 col-md-6">
+                <div class="card p-2" >
                   <div class="card-body">
                     <h5 class="card-title text-primary fw-bold">{totalRent} </h5>
                     <h6 class="mt-2 card-subtitle mb-2 text-body-secondary">

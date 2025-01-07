@@ -2,19 +2,23 @@ import React from "react";
 import Sidebar from "../Components/Sidebar";
 import RentView from "../Components/RentView";
 import Analytics from "../Components/Analytics";
+
+
+
 function Dashboard() {
-  
+
 
 
   return (
     <>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-lg-2 col-md-4">
+
+          <div className="col-lg-2 col-1 ">
             <Sidebar />
           </div>
-          <div className="col-lg-10 ">
-           <Analytics/>
+          <div className="col-lg-10 col-6">
+            <Analytics />
           </div>
         </div>
       </div>
